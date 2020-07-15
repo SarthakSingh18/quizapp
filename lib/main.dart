@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/page/questionPage.dart';
+import 'package:quiz_app/page/routerPage.dart';
 void main(){
   runApp(MyApp());
 }
@@ -14,7 +15,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: QuestionPage(),
+      home: Router(),
     );
   }
 }
