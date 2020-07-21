@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_stetho/flutter_stetho.dart';
 import 'package:quiz_app/page/questionPage.dart';
 import 'package:quiz_app/page/routerPage.dart';
 void main(){
+  WidgetsFlutterBinding.ensureInitialized();
+  Stetho.initialize();
   runApp(MyApp());
 }
 
